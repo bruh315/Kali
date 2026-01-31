@@ -12,3 +12,4 @@ Notes:
    To turn them on open up a command prompt 
    and type the command:
       reg add "HKCU/Console" /v "VirtualTerminalLevel" /t REG_DWORD /d 1 /f
+   and restart the batch file.
