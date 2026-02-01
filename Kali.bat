@@ -20,57 +20,57 @@ if /I "!n!" == "" (
 echo !n!>>hs.txt
 
 if /I "!n!" == "help" (
-	echo !i0!╔══════════════════╦═══════════════════════════════════════════════════════════╗
-	echo !i0!║     Command      ║ Action                                                    ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     Clear        ║ Clears the terminal buffer                                ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     pwd          ║ Prints the working directory                              ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     cd ^<dir^>     ║ Goes to the following directory                           ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     ping ^<ip^>    ║ Checks the network status of a host                       ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     webhook      ║ Sends a message to a discord webhook                      ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     neofetch     ║ Displays certain system information                       ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     touch ^<name^> ║ Creates a file with the specified name                    ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     cat ^<name^>   ║ Displayes the contents of a file                          ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     whoami       ║ Shows hostname and user account                           ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     hostname     ║ Shows hostname                                            ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     exit         ║ Exits out of shell                                        ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     history      ║ Shows command history                                     ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║    flush history ║ Flushes the history                                       ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     ls           ║ Lists directory contents                                  ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     mkdir ^<dir^>  ║ Creates a directory                                       ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     rmdir ^<dir^>  ║ Removes a directory                                       ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     sleep ^<time^> ║ Sleeps for a specified amount                             ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     cp ^<f1^> ^<f2^> ║ Copies f1 into f2                                         ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     rm ^<file^>    ║ Deletes the file                                          ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     ps x         ║ Lists running processes                                   ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     ifconfig     ║ Displays IP configs                                       ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     uptime       ║ Displays the time of system boot and current time         ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║     echo         ║ Echoes text                                               ║
-	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
-	echo !i0!║    nc -l -p port ║ Listens on a sertain port ^(tcp^)                           ║
-	echo !i0!╚══════════════════╩═══════════════════════════════════════════════════════════╝
+	echo !i0!╔══════════════════╦═══════════════════════════════════════════════════════════╗!i0!╔══════════════════╦═══════════════════════════════════════════════════════════╗
+	echo !i0!║     Command      ║ Action                                                    ║!i0!║     NetCmd       ║ Action                                                    ║
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
+	echo !i0!║     Clear        ║ Clears the terminal buffer                                ║!i0!║     conscan      ║ Scans for processes that have a connection over TCP       ║
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣
+	echo !i0!║     pwd          ║ Prints the working directory                              ║!i0!║     ipscan ^<sn^>  ║ Scans for IP addresses on the subnet sn                   ║
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!╚══════════════════╩═══════════════════════════════════════════════════════════╝
+	echo !i0!║     cd ^<dir^>     ║ Goes to the following directory                           ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     ping ^<ip^>    ║ Checks the network status of a host                       ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     webhook      ║ Sends a message to a discord webhook                      ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     neofetch     ║ Displays certain system information                       ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     touch ^<name^> ║ Creates a file with the specified name                    ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     cat ^<name^>   ║ Displayes the contents of a file                          ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     whoami       ║ Shows hostname and user account                           ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     hostname     ║ Shows hostname                                            ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     exit         ║ Exits out of shell                                        ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     history      ║ Shows command history                                     ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║    flush history ║ Flushes the history                                       ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     ls           ║ Lists directory contents                                  ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     mkdir ^<dir^>  ║ Creates a directory                                       ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     rmdir ^<dir^>  ║ Removes a directory                                       ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     sleep ^<time^> ║ Sleeps for a specified amount                             ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     cp ^<f1^> ^<f2^> ║ Copies f1 into f2                                         ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     rm ^<file^>    ║ Deletes the file                                          ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     ps x         ║ Lists running processes                                   ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     ifconfig     ║ Displays IP configs                                       ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     uptime       ║ Displays the time of system boot and current time         ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║     echo         ║ Echoes text                                               ║!i0!
+	echo !i0!╠══════════════════╬═══════════════════════════════════════════════════════════╣!i0!
+	echo !i0!║    nc -l -p port ║ Listens on a sertain port ^(tcp^)                           ║!i0!
+	echo !i0!╚══════════════════╩═══════════════════════════════════════════════════════════╝!i0!
 )
 
 if /I "!n!" == "clear" (
@@ -152,7 +152,7 @@ if /I "!n:~0,4!" == "cat " (
 	set "prfc=!prfc:/=\!"
 	set "prfc=!prfc:./=!"
 	set "prfc=!prfc:"=!"
-	for /f "tokens=* delims=" %%a in ('type "!pfrc!"') do (
+	for /f "tokens=* delims=" %%a in ('type "!prfc!"') do (
 		echo !i0!%%a
 	)
 	goto main 
@@ -195,6 +195,15 @@ if /I "!n!" == "ls" (
 	for /f "tokens=* delims=" %%a in ('dir') do (
 		echo !i0!%%a
 	)
+	goto main
+)
+
+if /I "!n!" == "netshell" (
+	if not exist "wns.bat" (
+		echo !i0!Netshell extension not installed.
+		goto main
+	)
+	start "" "wns.bat"
 	goto main
 )
 
@@ -300,19 +309,6 @@ if /I "!n!" == "ifconfig -a" (
 	goto main
 )
 
-if /I "!n:~0,4!" == "cat " (
-	set "prmc=!n:4!"
-	set "prmc=!prmc:/mnt/c=C:!"
-	set "prmc=!prmc:/mnt/d=D:!"
-	set "prmc=!prmc:/mnt/e=E:!"
-	set "prmc=!prmc:/mnt/f=F:!"
-	set "prmc=!prmc:/mnt/z=Z:!"
-	set "prmc=!prmc:/=\!"
-	set "prmc=!prmc:./=!"
-	type "!prmc!"
-	goto main
-)
-
 if /I "!n:~0,5!" == "echo " (
 	set "text=!n:~6!"
 	set "text=!text:0!"
@@ -400,29 +396,37 @@ if /I "!n:~0,4!" == "man " (
 	)
 	if /I "!n:~4!" == "sleep" (
 		echo sleep [TIME] - Sleep for [TIME] seconds
+		goto main
 	)
 	if /I "!n:~4!" == "rm" (
 		echo rm [FN] - Removes a the file [FN]
+		goto main
 	)
 	if /I "!n:~4!" == "cp" (
 		echo cp [FN1] [FN2] - Copies the contents of the file [FN1] into [FN2]
 		echo Note: The cp command copies the file byte for byte, in a binary format
 		echo       This isn't an issue with text files thought
+		goto main
 	)
 	if /I "!n:~4!" == "ps x" (
 		echo ps x - Lists the current running processes
+		goto main
 	)
 	if /I "!n:~4!" == "ifconfig" (
 		echo ifconfig - Lists information about local adapter configurations
+		goto main
 	)
 	if /I "!n:~4!" == "uptime" (
 		echo uptime - Displays the time of the system boot, and the current time
+		goto main
 	)
 	if /I "!n:~4!" == "nc -l -p" (
 		echo nc -l -p [PORT] - Listens on TCP on port [PORT]
+		goto main
 	)
 	if /I "!n:~4!" == "grep" (
 		echo grep [FN] - Asks for search string, finds the string in a file
+		goto main
 	)
 )
 
@@ -432,7 +436,7 @@ goto main
 
 :initloop
 set "nfi=          "
-set "i0=   "
+set /p i0=<io.txt
 for /f "tokens=* delims=" %%a in ('hostname') do (
 	set "hostname=%%a"
 )
@@ -452,7 +456,7 @@ echo.
 echo !i0!!e![38;2;39;181;34mKali Linux Simulator
 echo !i0!Made by:  alexsome1
 set /p=".!i0:~1!Press enter to continue !e![0m"
-mode 175,50
+mode 175, 75
 cls
 echo.
 goto :main
