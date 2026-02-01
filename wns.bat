@@ -1,4 +1,4 @@
-@Wns
+@:: Wns.bat
 @echo off
 setlocal enabledelayedexpansion
 
@@ -128,3 +128,4 @@ exit /b 0
 set /p i0=<io.txt
 
 exit /b 0
+
