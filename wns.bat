@@ -1,3 +1,4 @@
+@Wns
 @echo off
 setlocal enabledelayedexpansion
 
@@ -125,4 +126,5 @@ exit /b 0
 
 :initloop
 set /p i0=<io.txt
+
 exit /b 0
